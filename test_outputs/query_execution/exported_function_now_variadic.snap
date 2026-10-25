@@ -1,0 +1,44 @@
+---
+source: src/query.rs
+---
+{
+  "./test_crates/exported_function_no_longer_variadic/": [
+    {
+      "export_name": String("opposite_direction"),
+      "name": String("opposite_direction"),
+      "span_begin_line": Uint64(50),
+      "span_end_line": Uint64(50),
+      "span_filename": String("src/lib.rs"),
+    },
+  ],
+  "./test_crates/exported_function_now_variadic/": [
+    {
+      "export_name": String("no_mangle_function"),
+      "name": String("no_mangle_function"),
+      "span_begin_line": Uint64(13),
+      "span_end_line": Uint64(13),
+      "span_filename": String("src/lib.rs"),
+    },
+    {
+      "export_name": String("export_name_symbol"),
+      "name": String("export_name_function"),
+      "span_begin_line": Uint64(17),
+      "span_end_line": Uint64(17),
+      "span_filename": String("src/lib.rs"),
+    },
+    {
+      "export_name": String("inherent_method_symbol"),
+      "name": String("inherent_method"),
+      "span_begin_line": Uint64(24),
+      "span_end_line": Uint64(24),
+      "span_filename": String("src/lib.rs"),
+    },
+    {
+      "export_name": String("hook"),
+      "name": String("variadic"),
+      "span_begin_line": Uint64(38),
+      "span_end_line": Uint64(38),
+      "span_filename": String("src/lib.rs"),
+    },
+  ],
+}
